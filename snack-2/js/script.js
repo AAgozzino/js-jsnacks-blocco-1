@@ -10,7 +10,9 @@ var secondaParola = prompt("Inserisci la seconda parola");
     Se secondaParola < primaParola stampo secondaParola + primaParola
     Altrimenti stampo primaParola = secondaParola
 */
-if (primaParola.length < secondaParola.length) {
+if (!isNaN(primaParola) || !isNaN(secondaParola) || primaParola === null || secondaParola === null || primaParola === "" || secondaParola === "") {
+  alert("Errore: inserisci parole");
+} else if (primaParola.length < secondaParola.length) {
   console.log(primaParola + " " + secondaParola);
 } else if (secondaParola.length < primaParola.length) {
   console.log(secondaParola + " " + primaParola);

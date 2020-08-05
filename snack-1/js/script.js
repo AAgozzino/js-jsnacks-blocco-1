@@ -1,10 +1,10 @@
 // L’utente inserisce due numeri in successione, con due prompt. Il software stampa il maggiore
 
 // Chiedo all'utente il primo numero
-var primoNumero = parseInt(prompt("Inserisci il primo numero"))
+var primoNumero = parseInt(prompt("Inserisci il primo numero"));
 
 // Chiedo all'utente il secondo primoNumero
-var secondoNumero = parseInt(prompt("Inserisci il secondo numero"))
+var secondoNumero = parseInt(prompt("Inserisci il secondo numero"));
 
 /*  Se primoNumero oppure secondoNumero non è un numero alert errore
     Se primoNumero > secondoNumero stampo primoNumero
@@ -12,7 +12,7 @@ var secondoNumero = parseInt(prompt("Inserisci il secondo numero"))
     Altrimenti stampo primoNumero = secondoNumero
 */
 if (isNaN(primoNumero) || isNaN(secondoNumero)) {
-  alert("Errore: non hai inserito un numero")
+  alert("Errore: non hai inserito un numero");
 } else if (primoNumero > secondoNumero) {
   console.log(primoNumero);
 } else if (secondoNumero > primoNumero) {
